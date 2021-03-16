@@ -1,5 +1,5 @@
 .row {
-  width: 992px;
+  width:100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
@@ -70,4 +70,29 @@ img {
 
 .clear {
   clear: both;
+}
+
+@media all and (min-width:992px){
+  .row{
+    width: 992px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px){
+  .row{
+    width:768px;
+  }
+}
+
+@media all and (max-width: 767px){
+  #why, #lezioni{
+    background-color: #F2F2CD;
+  }
+  .row{
+    margin-top: 0;
+    padding:10px;
+  }
+  img{
+    height:100px;
+  }
 }
